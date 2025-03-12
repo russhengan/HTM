@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Monthsary, My Love</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+</head>
+
+<body>
+  <!-- Landing Section -->
+  <header class="landing">
+    <h1 id="greeting">Happy Monthsary, My Babi ❤️</h1>
+    <button id="enterBtn">Enter</button>
+  </header>
+
+  <!-- Main Content -->
+  <main id="mainContent" style="display: none;">
+    <!-- Photo Gallery Section -->
+    <section id="gallery">
+      <h2>My fave pics with u! <3 </h2>
+      <div class="gallery-container">
+        <img src="assets/1.jpg" alt="Photo 1" class="gallery-item" />
+        <img src="assets/2.jpg" alt="Photo 2" class="gallery-item" />
+        <img src="assets/3.jpg" alt="Photo 3" class="gallery-item" />
+        <img src="assets/4.jpg" alt="Photo 4" class="gallery-item" />
+        <img src="assets/5.jpg" alt="Photo 5" class="gallery-item" />
+        <img src="assets/6.jpg" alt="Photo 6" class="gallery-item" />
+        <img src="assets/7.jpg" alt="Photo 7" class="gallery-item" />
+        <img src="assets/8.jpg" alt="Photo 8" class="gallery-item" />
+      </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section id="loveLetter">
+      <h2>To my Babi: </h2>
+      <div id="letterContent"></div>
+    </section>
+
+    <!-- Secret Message Section -->
+    <section id="secretMessage">
+      <button id="revealSecret">Open me!</button>
+      <p id="secretText" style="display: none;">Mahal kita araw araw Adiel, Sobrang miss na miss na miss na kita!, date na tayo soon after ng busy days natin. Sana mapatawad mo ako sa kasalanan ko love :< Sobrang love na love kita babi, you are the best girl in my whole life! My Ka-duo and everything and my safe place!.</p>
+    </section>
+  </main>
+
+  <div id="finalMessage" style="display: none;">
+    <h2>I Love You! ❤️</h2>
+  </div>
+  
+
+  <!-- Lightbox Modal for Photo Viewing -->
+  <div id="lightbox" class="lightbox" style="display: none;">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightboxImg" alt="Enlarged Photo" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
